@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!-- Standard test cases for EvalExpr -->
+<test-case-definitions>
+
+<test-case>
+	<id>C001</id>
+	<description>LexicalException.</description>
+	<input>((5 @ 4) ? 7 : 8</input>
+	<exception>IllegalSymbolException</exception>
+</test-case>
+
+<test-case>
+	<id>C002</id>
+	<description>MissingOperandException</description>
+	<input>6+6*(*9)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+
+<test-case>
+	<id>C003</id>
+	<description>Operator expected.</description>
+	<input>(1 + 12) ^ (3 - 14)  5</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+
+
+
+<test-case>
+	<id>C004</id>
+	<description>Divided by 0.</description>
+	<input>4 / (12 - 3 * 4) + 1</input>
+	<exception>DividedByZeroException</exception>
+</test-case>
+
+<test-case>
+	<id>C005</id>
+	<description>Type mismatched.</description>
+	<input><![CDATA[(13 < 2 * 5) + 12]]></input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+
+<test-case>
+	<id>C006</id>
+	<description>Scientific Notation Error.</description>
+	<input>4 + 10.E+5 + 1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+
+<test-case>
+	<id>C007</id>
+	<description>Not a predefined identifier.</description>
+	<input>4 + mix(5, 2) + 1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+
+<test-case>
+	<id>C008</id>
+	<description>Function call error.</description>
+	<input>sin(2, 1,4,5)</input>
+	<exception>FunctionCallException</exception>
+</test-case>
+
+<test-case>
+	<id>C009</id>
+	<description>Function call error.</description>
+	<input>min(2.55)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+
+<test-case>
+	<id>C010</id>
+	<description>SyntacticException.</description>
+	<input>3.14 * 2 >= 2.5 * 3 ? (6 : 7) + 8</input>
+	<exception>TrinaryOperationException</exception>
+</test-case>
+
+
+<test-case>
+	<id>C011</id>
+	<description>A simple expression with min.</description>
+	<input>MIN(7e3,3.14e-0)</input>
+	<output>3.14</output>
+</test-case>
+
+<test-case>
+	<id>C012</id>
+	<description>EmptyExpression Exception</description>
+	<input>   </input>
+	<output>EmptyExpressionException</output>
+</test-case>
+
+</test-case-definitions>
