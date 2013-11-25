@@ -11,7 +11,7 @@ Including:
 Basic Algorithm: OPP
 
 Run:
-cd bin
+cd bin\n
 java ExprEval
 
 Test using xml:
