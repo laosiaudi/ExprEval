@@ -3,18 +3,18 @@ ExprEval
 
 A complex scientific calculator based on OPP algorithm(Compilers course project)
 
-Including:
-(1)Lexical Analization
-(2)Syntatic Analization
-(3)Semantic Analization
+Including:  
+(1)Lexical Analization  
+(2)Syntatic Analization  
+(3)Semantic Analization  
 
-Basic Algorithm: OPP
+Basic Algorithm: OPP  
 
-Run:
-cd bin\n
-java ExprEval
+Run:  
+cd bin  
+java ExprEval  
 
-Test using xml:
-1.put your test.xml in testcases
-2.cd bin
-3.java test.ExprEvalTest ../testcases/test.xml
+Test using xml:  
+1.put your test.xml in testcases  
+2.cd bin  
+3.java test.ExprEvalTest ../testcases/test.xml  
