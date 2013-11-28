@@ -4,9 +4,9 @@ ExprEval
 A complex scientific calculator based on OPP algorithm(Compilers course project)
 
 Including:  
-(1)Lexical Analization  
-(2)Syntatic Analization  
-(3)Semantic Analization  
+(1)Lexical Analysis  
+(2)Syntatic Analysis    
+(3)Semantic Analysis    
 
 Basic Algorithm: OPP  
 
