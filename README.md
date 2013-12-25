@@ -27,4 +27,3 @@ Test using xml:
   ![github screen3](/images/screen3.png) 
   
   
-**for some special reasons, source core codes will be submited after a few days**
