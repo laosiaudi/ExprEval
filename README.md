@@ -27,3 +27,7 @@ Test using xml:
   ![github screen3](/images/screen3.png) 
   
   
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/laosiaudi/expreval/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
